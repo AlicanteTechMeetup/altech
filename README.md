@@ -57,7 +57,9 @@ git commit -m "Set ruby version"
 ```
 rails new .
 
-# uncomment `gem 'therubyracer', platform: :ruby`
+# Uncomment `gem 'therubyracer', platform: :ruby` in Gemfile
+vim Gemfile
+# edit and save Gemfile
 bundle
 
 # start rails server
