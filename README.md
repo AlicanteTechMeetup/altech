@@ -3,7 +3,7 @@
 ## Boot vm by vagrant
 
 ```
-vagrant box ubuntu/trusty64
+vagrant box add ubuntu/trusty64
 vagrant up
 vagrant ssh
 ```
