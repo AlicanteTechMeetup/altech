@@ -2,6 +2,32 @@
 
 ## Boot vm by vagrant
 
+### Shortcut for Meetup attendee
+
+```
+wget "https://www.dropbox.com/s/fbbhmi4823owpax/package.box"
+vagrant box add package.box --name altech
+```
+
+Replace Vagrantfile with this
+
+```ruby
+Vagrant.configure(2) do |config|
+  config.vm.box = "altech"
+  config.vm.hostname = "development"
+  config.vm.network "forwarded_port", guest: 3000, host: 3000
+end
+```
+
+Then, run these commands
+
+```
+vagrant up
+vagrant ssh
+```
+
+### For others or who couldn't download prepared box
+
 ```
 vagrant box add ubuntu/trusty64
 vagrant up
