@@ -5,7 +5,7 @@
 ### Shortcut for Meetup attendee
 
 ```
-wget "https://www.dropbox.com/s/fbbhmi4823owpax/package.box"
+wget --no-check-certificate "https://www.dropbox.com/s/fbbhmi4823owpax/package.box"
 vagrant box add package.box --name altech
 ```
 
